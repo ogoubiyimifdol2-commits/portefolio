@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ogoubiyi Abdoul Mifdol Folahanmi Adio Fiacre | Portfolio</title>
+  <meta name="description" content="Portfolio d'Ogoubiyi Abdoul Mifdol Folahanmi Adio Fiacre, étudiant à l'Institut Ivoirien de Technologie (IIT) : CV, projets et contact.">
+
+  <!-- Bootstrap 5 en local : aucune connexion internet nécessaire -->
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="visually-hidden-focusable skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#introduction">Ogoubiyi<span class="accent">.</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir ou fermer le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav mx-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <button class="btn btn-theme" id="theme-toggle" type="button" aria-label="Passer au thème clair">
+            <i class="bi bi-sun-fill" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== INTRODUCTION ===================== -->
+    <section id="introduction" class="hero d-flex align-items-center" aria-labelledby="titre-intro">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <span class="badge-pill"><i class="bi bi-mortarboard-fill me-2" aria-hidden="true"></i>Étudiant à l'IIT · 2026-2027</span>
+            <p class="hello mt-4 mb-1">Bonjour, je suis</p>
+            <h1 id="titre-intro" class="hero-name">Ogoubiyi Abdoul Mifdol Folahanmi Adio Fiacre</h1>
+            <p class="hero-title">Étudiant à l'Institut Ivoirien de Technologie (IIT)</p>
+            <p class="hero-text">
+              Passionné de développement et de nouvelles technologies, j'apprends en construisant
+              des projets concrets, du scraping de données à l'analyse comparative.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-accent btn-lg" href="#projets">Voir mes projets</a>
+              <a class="btn btn-outline-accent btn-lg" href="#cv">Voir mon CV</a>
+            </div>
+            <div class="d-flex gap-3 mt-4">
+              <a class="icon-btn" href="https://github.com/ogoubiyimifdol2-commits" target="_blank" rel="noopener noreferrer" aria-label="GitHub (s'ouvre dans un nouvel onglet)"><i class="bi bi-github" aria-hidden="true"></i></a>
+              <a class="icon-btn" href="mailto:ogoubiyimifdol2@gmail.com" aria-label="Envoyer un e-mail"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 text-center order-1 order-lg-2">
+            <div class="avatar-wrap">
+              <div class="avatar-ring">
+                <img src="images/photo-profil.jpg" width="800" height="800"
+                     alt="Portrait d'Ogoubiyi, en gilet bleu aux couleurs de l'IIT et cravate rouge">
+              </div>
+              <span class="avatar-tag"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>Côte d'Ivoire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CV ===================== -->
+    <section id="cv" class="section" aria-labelledby="titre-cv">
+      <div class="container">
+        <h2 id="titre-cv" class="section-title">Mon <span class="accent">CV</span></h2>
+        <p class="section-sub">Mon parcours, mon expérience et mes compétences.</p>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3 class="cv-heading"><i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Formation</h3>
+            <article class="card-soft">
+              <h4 class="h5 mb-1">Institut Ivoirien de Technologie (IIT)</h4>
+              <p class="meta mb-2">Étudiant · Année universitaire 2026-2027</p>
+              <p class="mb-0">Formation en technologies, avec des projets pratiques en programmation (Python, scraping, analyse de données).</p>
+            </article>
+
+            <h3 class="cv-heading mt-5"><i class="bi bi-briefcase me-2" aria-hidden="true"></i>Expériences</h3>
+            <article class="card-soft">
+              <h4 class="h5 mb-1">Aucune expérience professionnelle pour le moment</h4>
+              <p class="mb-0">Mes projets personnels et académiques, présentés plus bas, illustrent mes compétences.</p>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="cv-heading"><i class="bi bi-lightning-charge me-2" aria-hidden="true"></i>Compétences</h3>
+            <article class="card-soft">
+              <h4 class="h6 text-uppercase meta mb-3">Programmation</h4>
+              <ul class="tags mb-4">
+                <li>Python</li><li>Dart</li>
+              </ul>
+              <h4 class="h6 text-uppercase meta mb-3">Web et mobile</h4>
+              <ul class="tags mb-4">
+                <li>HTML5</li><li>CSS3</li><li>Bootstrap 5</li><li>Flutter</li><li>Firebase</li>
+              </ul>
+              <h4 class="h6 text-uppercase meta mb-3">Outils et méthodes</h4>
+              <ul class="tags mb-0">
+                <li>Git</li><li>GitHub</li><li>Web scraping</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section id="projets" class="section section-alt" aria-labelledby="titre-projets">
+      <div class="container">
+        <h2 id="titre-projets" class="section-title">Mes <span class="accent">projets</span></h2>
+        <p class="section-sub">Mes deux projets disponibles sur GitHub.</p>
+
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-md-6 col-xl-5">
+            <article class="card project-card h-100">
+              <img src="images/projet-amazone-scraper.svg" class="card-img-top" width="800" height="450"
+                   alt="Illustration du projet amazone_scraper : un panier d'achat">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">amazone_scraper</h3>
+                <p class="card-text">Script Python de web scraping qui collecte automatiquement des informations sur des produits Amazon.</p>
+                <ul class="tags mt-auto mb-3"><li>Python</li><li>Web scraping</li></ul>
+                <a class="btn btn-outline-accent btn-sm" href="https://github.com/ogoubiyimifdol2-commits/amazone_scraper" target="_blank" rel="noopener noreferrer">
+                  Voir sur GitHub <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i><span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+
+          <div class="col-md-6 col-xl-5">
+            <article class="card project-card h-100">
+              <img src="images/projet-analyse-comparative.svg" class="card-img-top" width="800" height="450"
+                   alt="Illustration du projet Analyse_Comparative : un graphique en barres">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Analyse_Comparative</h3>
+                <p class="card-text">Projet Python d'analyse comparative de données.</p>
+                <ul class="tags mt-auto mb-3"><li>Python</li><li>Analyse de données</li></ul>
+                <a class="btn btn-outline-accent btn-sm" href="https://github.com/ogoubiyimifdol2-commits/Analyse_Comparative" target="_blank" rel="noopener noreferrer">
+                  Voir sur GitHub <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i><span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section" aria-labelledby="titre-contact">
+      <div class="container">
+        <h2 id="titre-contact" class="section-title">Me <span class="accent">contacter</span></h2>
+        <p class="section-sub">Une question, une opportunité ? Écrivez-moi.</p>
+
+        <div class="row gy-4">
+          <div class="col-lg-7">
+            <form id="form-contact" class="card-soft" novalidate>
+              <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" name="nom" autocomplete="name" required>
+                <div class="invalid-feedback">Merci d'indiquer votre nom.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                <div class="invalid-feedback">Merci d'indiquer une adresse e-mail valide.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                <div class="invalid-feedback">Merci d'écrire votre message.</div>
+              </div>
+              <button type="submit" class="btn btn-accent btn-lg">Envoyer le message</button>
+              <p class="meta small mt-3 mb-0">L'envoi ouvre votre application de messagerie avec le message prêt à partir.</p>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card-soft h-100">
+              <h3 class="h5 mb-4">Mes coordonnées</h3>
+              <ul class="list-unstyled contact-list mb-0">
+                <li>
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                  <a href="mailto:ogoubiyimifdol2@gmail.com">ogoubiyimifdol2@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  <a href="https://github.com/ogoubiyimifdol2-commits" target="_blank" rel="noopener noreferrer">github.com/ogoubiyimifdol2-commits<span class="visually-hidden"> (s'ouvre dans un nouvel onglet)</span></a>
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                  <span>Côte d'Ivoire</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2026 Ogoubiyi Abdoul Mifdol Folahanmi Adio Fiacre. Tous droits réservés.</p>
+      <div class="d-flex gap-3">
+        <a class="icon-btn" href="https://github.com/ogoubiyimifdol2-commits" target="_blank" rel="noopener noreferrer" aria-label="GitHub (s'ouvre dans un nouvel onglet)"><i class="bi bi-github" aria-hidden="true"></i></a>
+        <a class="icon-btn" href="mailto:ogoubiyimifdol2@gmail.com" aria-label="Envoyer un e-mail"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
