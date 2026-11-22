@@ -63,3 +63,8 @@ Pour changer l'adresse de destination, modifie `DESTINATAIRE` dans `js/script.js
 ## Mettre en ligne (facultatif)
 
 Dépose le dossier sur GitHub Pages, Netlify ou Vercel : c'est un site statique, il fonctionne tel quel.
+
+## Vidéo de présentation
+
+[Voir la vidéo de présentation]https://drive.google.com/file/d/1LE9u_IhNf8Kd5aEj33fYUZzHUInHU-iH/view?usp=drive_link
+
