@@ -75,6 +75,44 @@
   window.addEventListener("resize", mettreAJourMenu);
   mettreAJourMenu();
 
+  /* ---------- Barre de progression, menu, bouton retour en haut ---------- */
+  var barre = document.querySelector(".scroll-progress");
+  var barreNav = document.querySelector(".site-nav");
+  var haut = document.querySelector(".to-top");
+
+  function surDefilement() {
+    var total = document.documentElement.scrollHeight - window.innerHeight;
+    var part = total > 0 ? window.scrollY / total : 0;
+    if (barre) barre.style.transform = "scaleX(" + Math.min(1, Math.max(0, part)) + ")";
+    if (barreNav) barreNav.classList.toggle("scrolled", window.scrollY > 20);
+    if (haut) haut.classList.toggle("show", window.scrollY > 600);
+  }
+  window.addEventListener("scroll", surDefilement, { passive: true });
+  window.addEventListener("resize", surDefilement);
+  surDefilement();
+
+  /* ---------- Apparition des blocs au défilement ---------- */
+  var reduit = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if ("IntersectionObserver" in window && !reduit) {
+    var cibles = document.querySelectorAll(
+      ".section-title, .section-sub, #cv .col-lg-6, #projets .row > div, #contact .row > div"
+    );
+    var observateur = new IntersectionObserver(function (entrees) {
+      entrees.forEach(function (entree) {
+        if (entree.isIntersecting) {
+          entree.target.classList.add("visible");
+          observateur.unobserve(entree.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+
+    cibles.forEach(function (el, i) {
+      el.classList.add("reveal");
+      el.style.setProperty("--d", (i % 3) * 90 + "ms");
+      observateur.observe(el);
+    });
+  }
+
   /* ---------- Formulaire de contact ----------
      Pas de serveur : on ouvre la messagerie de la personne avec le message prêt. */
   var DESTINATAIRE = "ogoubiyimifdol2@gmail.com";

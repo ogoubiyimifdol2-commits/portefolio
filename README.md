@@ -51,7 +51,7 @@ Dans la section Contact, ajoute dans la liste `contact-list` :
 
 ### Changer les couleurs
 
-Dans `css/style.css`, en haut du fichier : modifie `--accent` (l'orange) et `--bg` (le fond).
+Dans `css/style.css`, en haut du fichier : modifie `--accent` (l'orange) et `--bg` (le fond). Le dégradé du nom et des titres est dans `--grad`, plus bas dans le même fichier.
 Il y a un bloc pour le thème sombre et un pour le thème clair.
 
 ## Formulaire de contact
